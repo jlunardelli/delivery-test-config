@@ -16,7 +16,7 @@ eureka:
 spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        password: '1234'
+        password: '123456'
         platform: mysql
         url: jdbc:mysql://localhost/delivery-order?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
@@ -27,10 +27,10 @@ spring:
             ddl-auto: create
         show-sql: true
 
-authserver:
-  hostname: http://localhost:9092
-security:
-  oauth2:
-    resource:
-      userInfoUri: ${authserver.hostname}/user
-      id: orders
+#authserver:
+#  hostname: http://localhost:9092
+#security:
+#  oauth2:
+#    resource:
+#      userInfoUri: ${authserver.hostname}/user
+#      id: orders
